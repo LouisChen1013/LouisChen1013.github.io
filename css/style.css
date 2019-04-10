@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 100%;
+
+}
+
+.bg {
+    /* background-image: linear-gradient(to right top, #080537, #003b7a, #009364, #00bf72, #ebeb12); */
+    background-color: black;
+    background-image: linear-gradient(10deg, rgb(3, 91, 123) 50%, transparent 50%),
+        linear-gradient(-70deg, rgb(255, 162, 0) 30%, transparent 30%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.jumbotron {
+    z-index: 2;
+    background: none;
+    text-align: center;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.index-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightslategray;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+
+.sign_in {
+    margin-right: 15px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+}
+
+.copyright_year {
+    color: rgb(255, 68, 0);
+}
+
+.card-group {
+    color: black;
+}
+
+
+.footer-margin {
+    height: 150px;
+}
+
+.content-margin {
+    margin-top: 75px;
+}
+
+
+.progress {
+    font-size: 1rem;
+}
+
+.name-pb {
+    background-color: rgb(10, 2, 177);
+}
+
+.percent-pb {
+    background-color: rgba(0, 94, 255, 0.838);
+}
+
+.me {
+    border-radius: 50%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(22, 28, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card:hover .overlay {
+    opacity: 0.8;
+}
+
+
+
+
+.dropdown-menu {
+    background-color: #353A40;
+    border: none;
+
+}
+
+.dropdown-menu a {
+    color: #7F8488
+}
+
+.dropdown-menu a:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.pic_margin {
+    margin-bottom: 30px;
+}
+
+progress {
+    height: 20px;
+    background-color: gray;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-title {
+    color: black;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .progress {
+        font-size: 0.5rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .progress {
+        font-size: 0.7rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
